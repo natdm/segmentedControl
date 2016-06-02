@@ -1,3 +1,4 @@
+import React from 'react';
 import {Platform} from 'react-native';
 import SCAndroid from './segmentedControl.android';
 import SCiOS from './segmentedControl.ios';
