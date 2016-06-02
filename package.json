@@ -1,0 +1,19 @@
+{
+  "name": "segmentedcontrol",
+  "version": "1.0.0",
+  "description": "Segmented Control for Android and iOS",
+  "main": "segmentedControlMain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natdm/segmentedControl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natdm/segmentedControl/issues"
+  },
+  "homepage": "https://github.com/natdm/segmentedControl#readme"
+}
