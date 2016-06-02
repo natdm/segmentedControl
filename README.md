@@ -6,7 +6,7 @@ A wrapper for SegmentedControlIOS so all props work the same.
 For Android all props work except disabled seems to require 
 a re-render and momentary hasn't been programmed.
 
-![alt text](https://github.com/natdm/segmentedControl/segmentedControl.gif "Segmented Control GIF Android")
+![alt text](https://github.com/natdm/segmentedControl/blob/master/segmentedControl.gif "Segmented Control GIF Android")
 
 Example:
 ```javascript
