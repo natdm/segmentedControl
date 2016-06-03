@@ -19,13 +19,13 @@ class SegmentedControl extends Component {
 
 
     onPress(selectedSegmentIndex) {
-        this.props.enabled
+        this.props.enabled && this.props.onChange
             ? this.props.onChange({ nativeEvent: { selectedSegmentIndex } })
             : null;
     }
 
     onValueChange(value) {
-        this.props.enabled
+        this.props.enabled && this.props.onValueChange
             ? this.props.onValueChange(value)
             : null;
     }
