@@ -6,9 +6,27 @@ A wrapper for SegmentedControlIOS so all props work the same.
 For Android all props work except disabled seems to require 
 a re-render and momentary hasn't been programmed.
 
+##PropTypes for Android (iOS are the same as React Native props for SegmentedControlIOS):
+```javascript
+SegmentedControl.propTypes = {
+    values: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
+    , tintColor: React.PropTypes.string
+    , enabled: React.PropTypes.bool
+    , onChange: React.PropTypes.func
+    , onValueChange: React.PropTypes.func
+    , androidTint: React.PropTypes.string   //Android Specific
+    , height: React.PropTypes.number        //Android Specific
+};
+
+SegmentedControl.defaultProps = {
+    height: 38
+    , enabled: true
+};
+```
+
 ![alt text](https://github.com/natdm/segmentedControl/blob/master/segmentedControl.gif "Segmented Control GIF Android")
 
-Example:
+##Example:
 ```javascript
 
 class TestSegmentControl extends Component {
