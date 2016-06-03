@@ -1,6 +1,6 @@
 {
   "name": "segmentedcontrol",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Segmented Control for Android and iOS",
   "main": "segmentedControlMain.js",
   "scripts": {
