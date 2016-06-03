@@ -10,9 +10,10 @@ import {
 class SegmentedControl extends Component {
 
     width() {
-        const window = Dimensions.get("window");
-        const {width} = window;
-        const valueCount = this.props.values.length;
+        const window = Dimensions.get("window")
+            , {width} = window
+            , valueCount = this.props.values.length;
+
         return width / valueCount;
     }
 
@@ -30,23 +31,19 @@ class SegmentedControl extends Component {
     }
 
     render() {
-        const p = this.props;
-        const width = { width: this.width() };
-        const height = { height: p.height };
+        const p = this.props
+            , width = { width: this.width() }
+            , height = { height: p.height }
 
-        const _borderBottomColor = p.androidTint
+            , borderBottomColor = p.androidTint
             ? p.androidTint
-            : p.tintColor;
+            : p.tintColor
 
-        const unselected = this.props.enabled
+            , unselected = this.props.enabled
             ? styles.unSelected
-            : styles.unSelectedDisabled;
+            : styles.unSelectedDisabled
 
-        const selectedBorderColor = {
-            borderBottomColor: _borderBottomColor
-                ? _borderBottomColor
-                : 'black'
-        };
+            , selectedBorderColor = { borderBottomColor };
 
         return (
             <View style={styles.container}>
@@ -63,8 +60,8 @@ class SegmentedControl extends Component {
                             <Text
                                 style={[styles.textValue, {
                                 color: p.selectedIndex == i
-                                ? 'black'
-                                : 'grey'
+                                    ? 'black'
+                                    : 'grey'
                                 }]}>{v}</Text>
                         </View>
                     </TouchableWithoutFeedback>)}
@@ -86,6 +83,7 @@ SegmentedControl.propTypes = {
 SegmentedControl.defaultProps = {
     height: 38
     , enabled: true
+    , tintColor: 'black'
 };
 
 const styles = StyleSheet.create({

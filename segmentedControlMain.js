@@ -1,7 +1,7 @@
 import React from 'react';
-import {Platform} from 'react-native';
-import SCAndroid from './segmentedControl.android';
-import SCiOS from './segmentedControl.ios';
+import { Platform } from 'react-native';
+import SCAndroid from './android/segmentedControl';
+import SCiOS from './ios/segmentedControl';
 
 const Component = p =>
     Platform.OS == 'android'
