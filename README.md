@@ -6,6 +6,8 @@ A wrapper for SegmentedControlIOS so all props work the same.
 For Android all props work except disabled seems to require 
 a re-render and momentary hasn't been programmed.
 
+####If you would like to use Android style tabs in iOS, use the 'override' prop.
+
 ##PropTypes and Default Prop Types for Android 
 ####JUST Android. iOS is unaffected.
 ```javascript
