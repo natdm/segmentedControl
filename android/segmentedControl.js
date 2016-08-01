@@ -39,14 +39,14 @@ class SegmentedControl extends Component {
             ? p.androidTint
             : p.tintColor
 
-            , unselected = this.props.enabled
+            , unselected = p.enabled
             ? styles.unSelected
             : styles.unSelectedDisabled
 
             , selectedBorderColor = { borderBottomColor };
 
         return (
-            <View style={styles.container}>
+            <View style={[styles.container, p.style]}>
                 {p.values.map((v, i) =>
                     <TouchableWithoutFeedback key={i} onPress={() => {this.onPress(i); this.onValueChange(v)}}>
                         <View style={[
