@@ -19,6 +19,8 @@ SegmentedControl.propTypes = {
     , onValueChange: React.PropTypes.func
     , androidTint: React.PropTypes.string   //Android Specific, overrides tintColor
     , height: React.PropTypes.number        //Android Specific
+    , androidTextActive: React.PropTypes.string //Android Specific
+    , androidTextColor: React.PropTypes.string //Android Specific
 };
 
 SegmentedControl.defaultProps = {
