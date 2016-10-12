@@ -86,6 +86,8 @@ SegmentedControl.defaultProps = {
     height: 38
     , enabled: true
     , tintColor: 'black'
+    , androidTextActive: 'black'
+    , androidTextColor: 'grey'
 };
 
 const styles = StyleSheet.create({
