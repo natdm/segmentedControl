@@ -60,8 +60,8 @@ class SegmentedControl extends Component {
                             <Text
                                 style={[styles.textValue, {
                                 color: p.selectedIndex == i
-                                    ? 'black'
-                                    : 'grey'
+                                    ? this.props.androidTextActive
+                                    : this.props.androidTextColor
                                 }]}>{v}</Text>
                         </View>
                     </TouchableWithoutFeedback>)}
@@ -78,6 +78,8 @@ SegmentedControl.propTypes = {
     , onValueChange: React.PropTypes.func
     , androidTint: React.PropTypes.string   //Android Specific
     , height: React.PropTypes.number        //Android Specific
+    , androidTextActive: React.PropTypes.string //Android Specific
+    , androidTextColor: React.PropTypes.string //Android Specific
 };
 
 SegmentedControl.defaultProps = {
