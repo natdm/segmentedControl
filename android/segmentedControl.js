@@ -6,6 +6,7 @@ import {
     , TouchableWithoutFeedback
     , Dimensions
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 class SegmentedControl extends Component {
 
@@ -60,8 +61,8 @@ class SegmentedControl extends Component {
                             <Text
                                 style={[styles.textValue, {
                                 color: p.selectedIndex == i
-                                    ? 'black'
-                                    : 'grey'
+                                    ? this.props.androidTextActive
+                                    : this.props.androidTextColor
                                 }]}>{v}</Text>
                         </View>
                     </TouchableWithoutFeedback>)}
@@ -70,20 +71,24 @@ class SegmentedControl extends Component {
     }
 }
 
-SegmentedControl.propTypes = {
-    values: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
-    , tintColor: React.PropTypes.string
-    , enabled: React.PropTypes.bool
-    , onChange: React.PropTypes.func
-    , onValueChange: React.PropTypes.func
-    , androidTint: React.PropTypes.string   //Android Specific
-    , height: React.PropTypes.number        //Android Specific
+SegmentedControl.PropTypes = {
+    values: PropTypes.arrayOf(PropTypes.string).isRequired
+    , tintColor: PropTypes.string
+    , enabled: PropTypes.bool
+    , onChange: PropTypes.func
+    , onValueChange: PropTypes.func
+    , androidTint: PropTypes.string   //Android Specific
+    , height: PropTypes.number        //Android Specific
+    , androidTextActive: PropTypes.string //Android Specific
+    , androidTextColor: PropTypes.string //Android Specific
 };
 
 SegmentedControl.defaultProps = {
     height: 38
     , enabled: true
     , tintColor: 'black'
+    , androidTextActive: 'black'
+    , androidTextColor: 'grey'
 };
 
 const styles = StyleSheet.create({
