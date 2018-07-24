@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/natdm/segmentedControl/issues"
   },
-  "homepage": "https://github.com/natdm/segmentedControl#readme"
+  "homepage": "https://github.com/natdm/segmentedControl#readme",
+  "devDependencies": {
+    "prop-types": "^15.6.2",
+  },
 }
