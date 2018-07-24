@@ -8,15 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natdm/segmentedControl.git"
+    "url": "git+https://github.com/ClearScholar/segmentedControl.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/natdm/segmentedControl/issues"
+    "url": "https://github.com/ClearScholar/segmentedControl/issues"
   },
-  "homepage": "https://github.com/natdm/segmentedControl#readme",
+  "homepage": "https://github.com/ClearScholar/segmentedControl#readme",
   "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.1.1",
+    "jest-cli": "^11.0.0",
+    "react": "^0.14.8",
+    "react-native": "^0.25.1",
     "prop-types": "^15.6.2",
   },
 }

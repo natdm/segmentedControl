@@ -71,7 +71,7 @@ class SegmentedControl extends Component {
     }
 }
 
-SegmentedControl.propTypes = {
+SegmentedControl.PropTypes = {
     values: PropTypes.arrayOf(PropTypes.string).isRequired
     , tintColor: PropTypes.string
     , enabled: PropTypes.bool
