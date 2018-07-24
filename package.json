@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ClearScholar/segmentedControl#readme",
   "devDependencies": {
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.6.2"
   }
 }
