@@ -17,12 +17,6 @@
   },
   "homepage": "https://github.com/ClearScholar/segmentedControl#readme",
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
-    "eslint": "^2.9.0",
-    "eslint-plugin-react": "^5.1.1",
-    "jest-cli": "^11.0.0",
-    "react": "^0.14.8",
-    "react-native": "^0.25.1",
     "prop-types": "^15.6.2",
-  },
+  }
 }
